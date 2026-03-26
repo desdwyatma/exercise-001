@@ -1,0 +1,21 @@
+{
+  "name": "exercise-001",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^22.19.15",
+    "dotenv": "^16.6.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "test": "npm run test-api && npm run test-ui",
+    "test-api": "playwright test --config=playwright.config.api.ts",
+    "test-ui": "playwright test --config=playwright.config.ui.ts",
+    "test:api": "npm run test-api",
+    "test:ui": "npm run test-ui",
+    "test:ui:headed": "playwright test --config=playwright.config.ui.ts --headed",
+    "codegen:ui": "playwright codegen --config=playwright.config.ui.ts"
+  }
+}
