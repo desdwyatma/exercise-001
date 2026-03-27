@@ -30,6 +30,9 @@ Playwright framework
 
 - UI tests (Playwright `page`):
   - `npm run test-ui`
+  - Filter cases by tag:
+    - `npm run test-ui -- "--grep" "@docs-home"`
+    - `npm run test-ui -- "--grep" "@home"`
 
 ## API target
 The API suite targets [DummyJSON](https://dummyjson.com) by default. You can override the target API by setting the `API_BASE_URL` environment variable.
